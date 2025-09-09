@@ -15,6 +15,7 @@ function SignUp() {
         alert("A jelszavak nem egyeznek!");
         return;
     }
+    
 
 
 
@@ -24,8 +25,13 @@ alert("Sikeres regisztráció!");
 }
 
 function Login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    if (email === "" || password === "") {
+        alert("Kérem, töltse ki az összes mezőt!");
+        return;
+    }
 
-
-    alert("Sikeres bejelentkezés!");
+   alert("Sikeres bejelentkezés!");
 
 }
