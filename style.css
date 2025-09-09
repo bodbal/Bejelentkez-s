@@ -1,0 +1,23 @@
+.switch {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.switch input[type="radio"] {
+  display: none;
+}
+.switch label {
+  padding: 8px 20px;
+  cursor: pointer;
+  background: #f0f0f0;
+  transition: background 0.2s;
+  user-select: none;
+}
+.switch input[type="radio"]:checked + label {
+  background: #4caf50;
+  color: white;
+}
+.switch label:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
