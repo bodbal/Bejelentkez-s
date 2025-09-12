@@ -1,23 +1,29 @@
-.switch {
-  display: inline-flex;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  overflow: hidden;
+body{
+  background-color: lightblue;
 }
-.switch input[type="radio"] {
-  display: none;
+
+.navbar {
+  background: #0047AB;
+  padding: 1rem;
+  text-align: center;
 }
-.switch label {
-  padding: 8px 20px;
-  cursor: pointer;
-  background: #f0f0f0;
-  transition: background 0.2s;
-  user-select: none;
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.2s;
 }
-.switch input[type="radio"]:checked + label {
-  background: #4caf50;
-  color: white;
+
+.navbar a:hover {
+  color: #ff9800;
 }
-.switch label:not(:last-child) {
-  border-right: 1px solid #ccc;
+
+#SignUpDiv, #LoginDiv {
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
