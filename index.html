@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bejelentkezés</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
 </head>
 <body>
-    <div>
-  <select name="switch" id="">
-    <option value="signup">Regisztráció</option>
-    <option value="login">Bejelentkezés</option>
-  </select>
+    
+    <div class="navbar">
+  <a href="#" onclick="showDiv('SignUpDiv')">Regisztráció</a>
+  <a href="#" onclick="showDiv('LoginDiv')">Bejelentkezés</a>
 </div>
 
 
-    <div id="SignUp">
+    <div id="SignUpDiv">
         <h1>Regisztráció</h1>
         <input type="email" id="reg-email" placeholder="Email" required>
         <input type="password" id="reg-password" placeholder="Jelszó" required>
         <input type="password" id="reg-password2" placeholder="Jelszó újra" required>
-        <button id="register-btn">Regisztráció</button>
+        <button id="register-btn" onclick="SignUp()">Regisztráció</button>
     </div>
 
 
-    <div id="Login">
+    <div id="LoginDiv">
         <h1>Bejelentkezés</h1>
         <input type="email" id="reg-email" placeholder="Email" required>
         <input type="password" id="login-password" placeholder="Jelszó" required>
-        <button id="login-btn">Bejelentkezés</button>
+        <button id="login-btn" onclick="Login()">Bejelentkezés</button>
     </div>
     
-
+    
+    
 </body>
 </html>
